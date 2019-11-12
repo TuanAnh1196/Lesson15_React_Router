@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const menus = [
    {
@@ -15,6 +15,16 @@ const menus = [
    {
       name: 'Liên Hệ',
       to: '/contact',
+      exact: false
+   },
+   {
+      name: 'Sản Phẩm',
+      to: '/product',
+      exact: false
+   },
+   {
+      name: 'Đăng nhập',
+      to: '/login',
       exact: false
    },
 ]

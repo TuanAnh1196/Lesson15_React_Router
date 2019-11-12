@@ -1,10 +1,6 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import NotFound from './components/NotFound';
 import Menu from './components/Menu';
 import routes from './routes';
 
@@ -17,7 +13,6 @@ class App extends React.Component {
                <Menu />
                {/* noi dung */}
                <Switch>
-                  <Route path="/" exact component={Home} />
                   {this.showContentMenus(routes)}
                </Switch>
             </div>
